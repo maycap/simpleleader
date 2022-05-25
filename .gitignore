@@ -1,0 +1,6 @@
+.idea
+build
+dist
+simpleleader.egg-info/
+__pycache__
+*.pyc
