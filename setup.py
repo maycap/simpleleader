@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 MAJOR = 0
 MINOR = 0
-MICRO = 2
+MICRO = 4
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 
 CLASSIFIERS = [
@@ -27,11 +27,19 @@ KEYWORDS = [
     "distributed",
 ]
 
+
+def get_long_desc():
+    with open("README.rst", encoding="utf-8") as fp:
+        desc = fp.read()
+    return desc
+
+
 setup(
     name="simpleleader",
     packages=find_packages(),
     version=VERSION,
     description='Simple distributed leader election',
+    long_description=get_long_desc(),
     author='maycap',
     author_email='gencat@163.com',
     url='https://github.com/maycap/simpleleader',
