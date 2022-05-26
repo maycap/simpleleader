@@ -4,3 +4,4 @@ dist
 simpleleader.egg-info/
 __pycache__
 *.pyc
+README.md
